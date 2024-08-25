@@ -1,6 +1,12 @@
 @import url(./background.css);
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
     text-decoration: none;
     scroll-behavior: smooth;
@@ -14,7 +20,7 @@ body {
   h1,
   h2,
   h3 {
-    font-family: "", sans-serif;
+    font-family: "Bangers", sans-serif;
     background-color: none;
     color: #ffffff;
     margin-left: 20px;
@@ -25,26 +31,39 @@ p {
     font-weight: 400;
     font-size: medium;
     font-style: normal;
-    color: #000000;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-right: 35px;
+  }
+
+  
+  li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    font-style: normal;
+    color: #ffffff;
     margin-left: 20px;
     margin-right: 35px;
   }
   
   header {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content:space-between;
-    align-items: center;
-    height: 100px;
+    height: 150px;
     background-color: #000000a2;
-    /*color: #ffffff98;*/
+    color: #ffffff98;
+    align-items: center;
     position: fixed;
     top:0;
     left: 0;
     width: 100%;
     padding: 10px;
-    z-index: 5;
+    z-index: 10;
     backdrop-filter: blur(10px);
-    font-display: flex;
+    
   }
 
   #logo-img {
@@ -75,4 +94,52 @@ p {
     color: #a3191998;
     transform: scale(1.1);
     
+  }
+
+  #main-new {
+    width: 60%;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+    z-index: 3;
+  }
+  
+  #aside {
+    width: 38%;
+  }
+  
+  #aside img {
+    height: 95%;
+    width: 95%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 30px ;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+  }
+
+  footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  #finish {
+    margin-top: 8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #class {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
