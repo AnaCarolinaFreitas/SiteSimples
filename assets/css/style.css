@@ -1,4 +1,6 @@
 @import url(./background.css);
+@import url(./forms.css);
+/*@import url(./contato.css);*/
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 .bangers-regular {
@@ -25,6 +27,13 @@ body {
     color: #ffffff;
     margin-left: 20px;
   }
+
+  h4{
+    font-family: "Bangers", sans-serif;
+    background-color: none;
+    color: #000000a2;
+    margin-left: 20px;
+  }
   
 p {
     font-family: "Poppins", sans-serif;
@@ -36,6 +45,15 @@ p {
     margin-right: 35px;
   }
 
+  ul{
+    list-style: none;
+    gap: 10px;
+    padding: 20px;
+  }
+  .centered-list {
+    text-align: center; /* Centraliza o conteúdo da lista */
+  }
+  
   
   li {
     font-family: "Poppins", sans-serif;
@@ -97,7 +115,7 @@ p {
   }
 
   #main-new {
-    width: 60%;
+    width: 45%;
     height: auto;
     margin-left: 20px;
     margin-right: 40px;
@@ -106,10 +124,22 @@ p {
     border: 1px solid #ffffff;
     box-shadow: 0 0 10px #ffffff;
     z-index: 3;
+    align-content:center;
+  }
+
+  #main-Sobre {
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+    z-index: 3;
+    text-align: center;
   }
   
   #aside {
-    width: 38%;
+    width: 35%;
   }
   
   #aside img {
@@ -124,19 +154,98 @@ p {
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
+    text-align: center;
   }
 
+
+  #Movies {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+
+#img-1 {
+    height: 400px;
+    width: 300px;
+    margin-right: 100px;
+    transition: transform 0.3s ease;
+}
+
+#img-1:hover{
+    transform: translateY(-15px);
+}
+
+#img-2 {
+    height: 400px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+#img-2:hover{
+    transform: translateY(-15px);
+}
+
+#img-3 {
+    height: 400px;
+    width: 300px;
+    margin-left: 100px;
+    transition: transform 0.3s ease;
+}
+
+#img-3:hover{
+    transform: translateY(-15px);
+}
+
+#img-4 {
+  height: 400px;
+  width: 300px;
+  margin-left: 100px;
+  transition: transform 0.3s ease;
+}
+
+#img-4:hover{
+  transform: translateY(-15px);
+}
+
+#finish {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #a3191998;
+  height: auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
   footer a {
-    color: rgb(255, 255, 255);
+    color: #000000a2;
     text-decoration: none;
     font-weight: 500;
   }
-  
-  #finish {
-    margin-top: 8rem;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+
+.final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+#linkedinimg {
+  height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin-left: 100px;
+}
 
   #class {
     display: flex; 
